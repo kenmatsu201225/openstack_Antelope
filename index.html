@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>共通PFver2.0</title>
+    <link rel="stylesheet" href="common.css" />
+  </head>
+  <body>
+  
+
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg bg-dark py-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h5 class="text-white">共通ver2.0</h5></a>
+        <div class="collapse navbar-collapse ms-auto" id="navbarText">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">ホーム</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">サービス</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ドキュメント</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">問い合わせ先</a>
+            </li>
+            <!--<span class="navbar-text text-white ms-5">hogeユーザー</span>-->
+            <li class="nav-item dropdown ms-4">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person">hogeユーザー</i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="#">システム1</a></li>
+                <li><a class="dropdown-item" href="#">システム2</a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">ログアウト</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- サービス -->
+    <div class="container">
+
+      <div id="service" class="row text-center mt-5 mb-5">
+        <h4>サービス一覧</h4>
+        <p>現在提供中のサービス一覧は以下になります。利用にあたっては必ずドキュメントの情報を読み込んだ上でご利用ください。</p>
+      </div>
+
+      <div class="row mb-3">
+        <!--管理者向け機能1-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="adminIcon m-2">
+                <i class="bi bi-person"></i>
+              </div>
+              <h6 class="admin">アカウント管理</h6>
+              <p>新規アカウントの作成と既存アカウント情報の編集や凍結が行えます。</p>
+            </div>
+          </a>
+        </div>
+        <!--管理者向け機能2-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="adminIcon m-2">
+                <i class="bi bi-file-earmark-richtext"></i>
+              </div>
+              <h6 class="admin">システム&プロジェクト管理</h6>
+              <p>システムとプロジェクトの新規作成・編集に加えて、作成済みアカウントの紐づけが行えます。</p>
+            </div>
+          </a>
+        </div>
+        <!--管理者向け機能3-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="adminIcon m-2">
+                <i class="bi bi-globe"></i>
+              </div>
+              <h6 class="admin">仮想ネットワーク管理</h6>
+              <p>各種NW情報の可視化・IPアドレスの予約が行えます。</p>
+            </div>
+          </a>
+        </div>
+        <!--管理者向け機能4-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="adminIcon m-2">
+                <i class="bi bi-sunglasses"></i>
+              </div>
+              <h6 class="admin">各種リソース情報算出</h6>
+              <p>決議で必要となるリソース情報の可視化や、物理サーバ単位の残リソースの参照が行えます。</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <!--一般向け機能1-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="memberIcon m-2">
+                <i class="bi bi-person"></i>
+              </div>
+              <h6 class="member">アカウント作成・編集</h6>
+              <p>選択中のシステムに紐づけるアカウントを作成・編集可能です。</p>
+            </div>
+          </a>
+        </div>
+        <!--一般向け機能2-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="memberIcon m-2">
+                <i class="bi bi-file-earmark-richtext"></i>
+              </div>
+              <h6 class="member">システム&プロジェクト作成・編集</h6>
+              <p>選択中のシステムに紐づくプロジェクトの作成・編集が可能です。</p>
+            </div>
+          </a>
+        </div>
+        <!--一般向け機能3-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="memberIcon m-2">
+                <i class="bi bi-globe"></i>
+              </div>
+              <h6 class="member">仮想ネットワーク確認</h6>
+              <p>選択中のシステムに紐づく仮想ネットワークの参照が可能です。(注:利用者側での仮想ネットワークの作成機能は提供していません)</p>
+            </div>
+          </a>
+        </div>
+        <!--一般向け機能4-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="memberIcon m-2">
+                <i class="bi bi-disc"></i>
+              </div>
+              <h6 class="member">スナップショット取得</h6>
+              <p>選択中のシステムに紐づく仮想マシンのスナップショットが作成可能です。</p>
+            </div>
+          </a>
+        </div>
+        <!--一般向け機能5-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="memberIcon m-2">
+                <i class="bi bi-device-hdd-fill"></i>
+              </div>
+              <h6 class="member">ログ管理・可視化機能</h6>
+              <p>CEERRCを利用したログ管理機能の提供と可視化</p>
+            </div>
+          </a>
+        </div>
+        <!--一般向け機能6-->
+        <div class="col-md-3 col-sm-6 mb-2">
+          <a href="#">
+            <div class="service">
+              <div class="memberIcon m-2">
+                <i class="bi bi-hammer"></i>
+              </div>
+              <h6 class="member">負荷かけサーバ利用申請</h6>
+              <p>基盤側で提供している負荷かけサーバの利用申請が可能です。</p>
+            </div>
+          </a>
+        </div>
+
+    </div>
+
+    
+
+  </body>
+</html>
